@@ -49,7 +49,6 @@ class Chatbox {
       try {
         const response = await fetch('https://intimate-secondly-burro.ngrok-free.app/api/predict', {
           method: 'POST',
-          credentials: '*',
           body: JSON.stringify({ message: text1 }),
           headers: {
             'Content-Type': 'application/json'
