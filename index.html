@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval';">
+  <title>Chatbox</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chatbox">
+    <!-- Chatbox Button -->
+    <div class="chatbox__button">
+      <button>💬</button>
+    </div>
+
+    <!-- Chatbox Content -->
+    <div class="chatbox__support">
+      <div class="chatbox__header">
+        <h3 class="chatbox__heading--header">Chat Support</h3>
+        <p class="chatbox__description--header">How can we assist you today?</p>
+      </div>
+
+      <div class="chatbox__messages">
+        <div class="messages__item messages__item--visitor">type something...</div>
+        <div class="messages__item messages__item--operator">get it here!</div>
+      </div>
+
+      <div class="suggestions"></div>
+
+      <div class="chatbox__footer">
+        <input type="text" placeholder="พิมพ์ข้อความของคุณ..." />
+        <button class="send__button">send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
